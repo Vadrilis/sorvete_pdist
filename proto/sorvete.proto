@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+
+service Sorvete {
+ rpc PedidoSorvete(SorveteRequest) returns (SorveteResponse);
+}
+
+
+
+message SorveteRequest {
+ int32 bolas = 1;
+ string sabor = 2;
+}
+
+
+
+message SorveteResponse {
+ string mensagem = 1;
+}
+
